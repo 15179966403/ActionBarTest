@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu,menu);
         MenuItem searchItem=menu.findItem(R.id.action_first);
+        //控件的展开与缩入监听
         MenuItemCompat.OnActionExpandListener listener=new MenuItemCompat.OnActionExpandListener() {
             @Override
             public boolean onMenuItemActionExpand(MenuItem item) {

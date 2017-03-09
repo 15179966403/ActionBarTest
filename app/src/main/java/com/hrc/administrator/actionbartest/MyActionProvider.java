@@ -8,7 +8,7 @@ import android.view.SubMenu;
 import android.view.View;
 
 /**
- * Created by Administrator on 2017/3/8.
+ * 标题栏的Action点击后弹出可选列表
  */
 
 public class MyActionProvider extends ActionProvider{
@@ -34,7 +34,6 @@ public class MyActionProvider extends ActionProvider{
                 .setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        Log.d("aa","sub item 1");
                         return true;
                     }
                 });
@@ -43,7 +42,6 @@ public class MyActionProvider extends ActionProvider{
                 .setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
                     @Override
                     public boolean onMenuItemClick(MenuItem item) {
-                        Log.d("aa","sub item 2");
                         return true;
                     }
                 });

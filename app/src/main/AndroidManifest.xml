@@ -16,8 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChildActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".ChildActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ThreeActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+            android:label="@string/title_activity_three"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.hrc.administrator.actionbartest.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
